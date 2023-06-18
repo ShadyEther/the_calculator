@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #container {
+      height: 100vh;
+      overflow-y: scroll;
+    }
+    
+    .content-section {
+      height: 100vh;
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="content-section">
+      <!-- Top content -->
+      <h1>Top Content</h1>
+    </div>
+    <div class="content-section">
+      <!-- Content that will be repeated -->
+      <h1>Content Section 1</h1>
+      <h1>Content Section 2</h1>
+      <h1>Content Section 3</h1>
+      <h1>Content Section 4</h1>
+      <h1>Content Section 5</h1>
+      <h1>Content Section 6</h1>
+      <h1>Content Section 7</h1>
+      <h1>Content Section 8</h1>
+      <h1>Content Section 9</h1>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.2.3/dist/lenis.js"></script>
+  <script>
+    lenis.ready(function() {
+      var container = lenis.get('#container');
+
+      container.on('scroll', function() {
+        if (container.scrollTop() + container.innerHeight() >= container.scrollHeight()) {
+          container.scrollTo(0, 0); // Reset scroll position to the top
+        }
+      });
+    });
+  </script>
+</body>
+</html>

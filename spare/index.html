@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 5vh;
+        }
+
+        .grid__item {
+            height: 47.5vh;
+            /* 50vh minus half of the gap */
+            background-size: cover;
+            background-position: 50% 20%;
+        }
+
+        .grid__item:nth-child(3n-2) {
+            border-radius: 0 2rem 2rem 0;
+        }
+
+        .grid__item:nth-child(3n) {
+            border-radius: 2rem 0 0 2rem;
+        }
+
+        .grid__item:nth-child(3n-1) {
+            border-radius: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="grid__item" style="background-image:url(img/1.jpg);">a </div>
+        <div class="grid__item" style="background-image:url(img/4.jpg);">b </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
