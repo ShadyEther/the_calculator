@@ -29,8 +29,10 @@ input[type="text"] {
 
 #result{
   border-width: 0px;
-  background: #aaa8a8;
-  border-radius: 100px;
+  /* background: #aaa8a8; */
+  background: #aef7ca;
+  /* border-radius: 100px; */
+  box-shadow: 0 4px rgba(0, 0, 0, 0.2);
 }
 .buttons {
   display: grid;
@@ -42,26 +44,26 @@ input[type="text"] {
 
 #equals_button{
   grid-row: span 2;
-  background: #f5f5ff;
+  background: #df450c;
 
 }
 
 #equals_button:hover{
-  background: #ff8989;
+  background: yellow;
 }
 
 #clear_button{
-  background: #4f4f4f;
+  background: #07e8a1;
 }
 
 #clear_button:hover{
-  background: #f7aeae;
+  background: yellow;
 }
 
 
 
 #sign_button{
-  background: #868686;
+  background: #df450c;
 }
 
 #digit_button{
@@ -69,14 +71,19 @@ input[type="text"] {
 }
 
 
+#dot_button{
+  background: #df450c;
+}
+
 button {
   border-width: 0px;
   padding: 10px;
   font-size: 16px;
-  border-radius: 30px;
+  border-radius: 10px;
   font-family:'Courier New', Courier, monospace;
   font-weight: 1000;
   /* cursor: none; */
+  box-shadow: 0 6px rgba(0, 0, 0, 0.2);
 
 }
 

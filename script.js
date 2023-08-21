@@ -6,6 +6,7 @@ function clearResult() {
   document.getElementById("result").value = "";
 }
 
+
 function calculateResult() {
   const expression = document.getElementById("result").value;
   const result = eval(expression);
